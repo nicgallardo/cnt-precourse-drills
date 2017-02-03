@@ -1,6 +1,7 @@
-//getAddresses - takes 0 arguments, returns a List of Address objects
-//        addAddress - takes an Address, returns void
+package com.galvanize;
+import java.util.ArrayList;
+
 interface Addressable {
-    public void getAddress();
-    public void addAddress();
-}
+    public ArrayList<Address> getAddresses();
+    public void addAddress(Address newAddress);
+};

@@ -1,14 +1,25 @@
+package com.galvanize;
 import java.util.ArrayList;
 
-class Buisness implements Addressable {
-    public String name;
-    public ArrayList<Address> addresses;
+public class Business implements Addressable{
+    private String name = "";
+    private ArrayList<Address> addresses; //= new ArrayList<>();
 
-    public getAddress( ) {
-
+    public Business(String name){
+        this.name = name;
     }
 
-    public addAddress() {
-
+    public ArrayList<Address> getAddresses(){
+        return addresses;
     }
+
+    public void addAddress(Address newAddress){
+        addresses.add(newAddress);
+    }
+
+    public String getName(){
+        return this.name;
+    }
+
 }
+
