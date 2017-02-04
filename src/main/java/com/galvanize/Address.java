@@ -1,6 +1,7 @@
 package com.galvanize;
 
 public class Address {
+
     private String street;
     private String city;
     private String state;
@@ -54,4 +55,5 @@ public class Address {
     public void setZip( String newZip){
         this.zip = newZip;
     }
+
 }
